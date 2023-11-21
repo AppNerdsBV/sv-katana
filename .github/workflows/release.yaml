@@ -10,7 +10,7 @@ jobs:
 
   push-docker:
     if: startsWith(github.ref, 'refs/tags/v')
-    runs-on: ubuntu-latest-16-cores
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
